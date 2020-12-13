@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript utility page</title>
+  </head>
+  <body class="bgImage">
+    <div class="container justify-content-center">
+      <div class="js-clock">
+        <h1></h1>
+      </div>
+      <div class="greet">
+        <form class="js-form">
+          <input type="text" placeholder="What is ur name?" />
+        </form>
+        <h2 class="nameplace hide">Greetings Ki</h2>
+      </div>
+      <div class="weather">
+        <button class="weather-btn">
+          What's the weather at your location?
+        </button>
+        <h4 class="weather-par-1"></h4>
+        <h4 class="weather-par-2"></h4>
+        <h4 class="weather-par-3"></h4>
+      </div>
+      <div class="todo">
+        <h3>Your todo list</h3>
+        <form class="js-todoForm">
+          <input type="text" placeholder="Type your todo" />
+        </form>
+        <ul class="js-todoList"></ul>
+      </div>
+    </div>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="bg.js"></script>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
