@@ -6,9 +6,13 @@
 
 
 
+### Finished Screenshot
 
+![image-20201214004351233](./README.assets/image-20201214004351233.png)
 
-![image-20201213185814180](README.assets/image-20201213185814180.png)
+![image-20201214004415568](./README.assets/image-20201214004415568.png)
+
+![image-20201213185814180](./README.assets/image-20201213185814180.png)
 
 
 
@@ -431,8 +435,105 @@ let ID = 0;
 
 ### Custom Font
 
+```css
+@font-face {
+  font-family: "Intro";
+  src: url("fonts/normal_normal_normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Intro";
+  src: url("fonts/normal_normal_bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+body {
+  font-family: Intro;
+}
+
+```
+
+![image-20201214004511167](./README.assets/image-20201214004511167.png)
+
+
+
+### Some CSS Stylings
+
+- ul has default `padding-inline-start`. This had to be set to 0 for my purpose.
+
+```css
+ul {
+  padding-inline-start: 0;
+}
+
+```
+
+- Prettier input 
+
+  ```css
+  input {
+    display: flex;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 10%;
+    border: 0;
+    border-bottom: 2px solid white;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  ::placeholder {
+    color: white;
+    opacity: 0.7;
+  }
+  ```
+
+  
+
+![image-20201214004716094](./README.assets/image-20201214004716094.png)
+
+- Amazing buttons can be found [here](https://www.bestcssbuttongenerator.com/#/28)
+
+  ```css
+  .weather-btn {
+    margin-top: 30px;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+  
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 42px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+  }
+  .weather-btn:hover {
+    background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    background-color: #e9e9e9;
+  }
+  .weather-btn:active {
+    position: relative;
+    top: 1px;
+  }
+  ```
+
+  
+
 
 
 ### Note
 
-1. woff vs woff2
+1. woff vs woff2 and other font related knowledges
+
+ 
