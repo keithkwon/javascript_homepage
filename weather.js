@@ -48,17 +48,13 @@ function askCoords() {
   navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoError);
 }
 
-function loadCoords() {
+function init() {
   const loadedCoords = localStorage.getItem(COORDS);
   if (loadedCoords === null) {
-    askCoords();
+    weatherBtn.addEventListener("click", askCoords);
   } else {
     getWeather();
   }
-}
-
-function init() {
-  weatherBtn.addEventListener("click", loadCoords);
 }
 
 init();
